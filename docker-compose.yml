@@ -1,0 +1,12 @@
+name: twitter
+
+services:
+    postgres:
+        container_name: postgres
+        image: bitnami/postgresql:latest
+        ports:
+            - 5432:5432
+        environment:
+            POSTGRESQL_USERNAME: admin
+            POSTGRESQL_PASSWORD: admin
+            POSTGRESQL_DATABASE: twitter
